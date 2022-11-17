@@ -1,33 +1,76 @@
-
 <!DOCTYPE html>
-<html>
-    <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Happy Diwali From Bhargavi </title>
-<link rel="stylesheet" href="./style.css">
-    </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <style>
+        
+body{
+    display: grid;
+    place-items: center;
+    background: #008888;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+.card{
+
+    background-color: #fdfdfd;
+    border-radius: 4px;
+    height: 85vh;
+    width: 85vh;
+    box-shadow: 0 3px 6px rgba(0,0,0, 0.16),0 3px 6px rgba(0, 0,0, 0.23);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    overflow: hidden;
+}
+@media only screen and (min-width:1000px){
+    .card{
+        flex-direction: row-reverse;
+    }
+    .card img.birthday{
+        width: 100%;
+        max-width: 60vh;
+        max-height: unset;
+    }
+}
+img.birthday{
+    max-height: 40vh;
+
+}
+.text{
+    padding: 1em;
+}
+.muted{
+    opacity: 0.8;
+    font-size: 12px;
+}
+.space{
+    height: 100px;
+}
+    </style>
+</head>
 <body>
-    <div class="cont">
-<div class="card">
-  <img src="https://cdn.pixabay.com/photo/2021/10/27/02/11/diwali-banner-6745457__480.png" alt="Avatar">
-  <div class="container">
-    <div class="cake">
-        <div class="candle">
-             <div class="flame"></div>
-         </div>
-     </div>
-    <!-- <h1><b>Learning Robo</b></h1>  -->
-    <h2>Wishing you</h2>
-    <h1 class="ml15">
-        <span class="word">Happy</span>
-        <span class="word">Diwali</span>
-      </h1>
-      <h2>2022</h2>
-      <h1 class="credit">Made with <span style="color:tomato;font-size:20px;">❤</span> by <a  href="https://github.com/Bhargavi1624/Bhargavi1624.github.io">Bhargavi Patel</a></h1>
-  </div>
-</div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-<script src="script.js"> </script>
+
+    <div class="card">
+
+        <img src="a.png" alt="birthday" class="birthday">
+        <div class="text">
+        <h1>Happy Birthday!</h1>
+       <!-- <h1>Papa!</h1> -->
+        <p>I hope you have a wonderful day</p>
+        <p class="muted"></p>
+
+    </div>
+    <div class="space"></div>
+    </div>
+
+    
 </body>
 </html>
